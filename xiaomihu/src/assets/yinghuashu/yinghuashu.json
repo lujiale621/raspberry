@@ -1,0 +1,47 @@
+{"frames": {
+
+"0fce7ce5942b91467435bcbbeeae7cbe2.png":
+{
+	"frame": {"x":0,"y":0,"w":620,"h":349},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":620,"h":349},
+	"sourceSize": {"w":620,"h":349}
+},
+"0fce7ce5942b91467435bcbbeeae7cbe21.png":
+{
+	"frame": {"x":0,"y":349,"w":620,"h":349},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":620,"h":349},
+	"sourceSize": {"w":620,"h":349}
+},
+"0fce7ce5942b91467435bcbbeeae7cbe54.png":
+{
+	"frame": {"x":0,"y":698,"w":620,"h":349},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":620,"h":349},
+	"sourceSize": {"w":620,"h":349}
+},
+"0fce7ce5942b91467435bcbbeeae7cbe63.png":
+{
+	"frame": {"x":0,"y":1047,"w":620,"h":349},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":620,"h":349},
+	"sourceSize": {"w":620,"h":349}
+}},
+"animations": {
+	"0fce7ce5942b91467435bcbbeeae7cbe": ["0fce7ce5942b91467435bcbbeeae7cbe2.png","0fce7ce5942b91467435bcbbeeae7cbe21.png","0fce7ce5942b91467435bcbbeeae7cbe54.png","0fce7ce5942b91467435bcbbeeae7cbe63.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "yinghuashu.png",
+	"format": "RGBA8888",
+	"size": {"w":620,"h":1396},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:cf8ce04299b02306e5b3c08936ae7818:218889ca8349e90909bea56eb045a12c:f4bf2cc55f523dec9a51f7f3d2bc06b6$"
+}
+}

@@ -1,0 +1,34 @@
+# cd /usr/lib/systemd/system/
+# cd /lib/systemd/system/
+
+# rm -f frpc_sql.service
+
+# vi frpc.service
+
+# systemctl daemon-reload
+
+# systemctl start frpc_sql.service
+# systemctl enable frpc_sql.service
+
+# Created symlink from /etc/systemd/system/multi-user.target.wants/frpcapi.service to /usr/lib/systemd/system/frpcapi.service.
+
+[Unit]
+Description=FRP to bypass NAT Network
+Wants = network-online.target
+After=network.target 
+
+[Service] 
+Type=simple 
+ExecStart=/usr/local/bin/raspberry/frp/cmd/frpc/frpc -c /usr/local/bin/raspberry/frp/cmd/frpc/frpc_gitlab.ini
+#ExecReload=/usr/local/frp/frpc
+#ExecStop=/usr/local/frp/frpc
+
+StandardOutput = syslog
+StandardError = inherit
+
+PrivateTmp=true 
+Restart=always
+RestartSec=3
+
+[Install] 
+WantedBy=multi-user.target

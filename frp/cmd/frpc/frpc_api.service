@@ -1,0 +1,31 @@
+# sudo cp frpc_api.service /usr/lib/systemd/system/
+
+# rm -f frpc_api.service
+
+# vi frpc.service
+
+# systemctl daemon-reload
+
+# systemctl start frpc_api.service
+# systemctl enable frpc_api.service
+
+# Created symlink from /etc/systemd/system/multi-user.target.wants/frpc_api.service to /usr/lib/systemd/system/frpc_api.service.
+
+[Unit]
+Description=FRP to bypass NAT Network
+Wants = network-online.target
+After=network.target 
+
+[Service] 
+Type=simple 
+ExecStart=/home/pi/frpc -c /home/pi/frpc_api.ini
+#ExecReload=/usr/local/frp/frpc
+#ExecStop=/usr/local/frp/frpc
+
+StandardOutput = syslog
+StandardError = inherit
+
+PrivateTmp=true 
+
+[Install] 
+WantedBy=multi-user.target
